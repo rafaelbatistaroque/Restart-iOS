@@ -6,17 +6,33 @@ struct OnboardingView: View {
 
     //MARK: - BODY
     var body: some View {
-        
+
         ZStack {
             Color("ColorBlue")
                 .ignoresSafeArea(.all, edges: .all)
 
             VStack(spacing: 20) {
-                //MARK: - HEADER
+                Spacer()
 
-                //MARK: - CENTER
+                VStack {
+                    //MARK: - HEADER
+                    Text("Share.")
+                        .font(.system(size: 60, weight: .heavy))
+                        .foregroundStyle(.white)
 
-                //MARK: - FOOTER
+                    Text("""
+                    It's not how much we give but
+                    how much love we put into giving.
+                    """)
+                    .font(.title3)
+                    .fontWeight(.light)
+                    .foregroundStyle(.white)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 10)
+                    //MARK: - CENTER
+
+                    //MARK: - FOOTER
+                }
             }
         }
     }
