@@ -15,6 +15,12 @@ struct HomeView: View {
                 .padding()
 
             //MARK: - CENTER
+            Text("The time that leads to mastery is dependent on the intensity of our focus.")
+                .font(.title3)
+                .fontWeight(.light)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+                .padding()
 
             //MARK: - FOOTER
 
