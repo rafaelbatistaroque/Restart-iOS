@@ -4,13 +4,19 @@ struct OnboardingView: View {
     //MARK: - PROPERTIES
     @AppStorage("onboarding") var isOnboardingViewActive: Bool = true
 
+    //MARK: - BODY
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Onboarding")
-                .font(.largeTitle)
+        
+        ZStack {
+            Color("ColorBlue")
+                .ignoresSafeArea(.all, edges: .all)
 
-            Button("Start"){
-                isOnboardingViewActive = false
+            VStack(spacing: 20) {
+                //MARK: - HEADER
+
+                //MARK: - CENTER
+
+                //MARK: - FOOTER
             }
         }
     }
