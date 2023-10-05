@@ -6,8 +6,17 @@ struct HomeView: View {
 
     var body: some View {
         VStack(spacing: 20) {
-            Text("Home")
-                .font(.largeTitle)
+            //MARK: - HEADER
+            Spacer()
+
+            Image("character-2")
+                .resizable()
+                .scaledToFit()
+                .padding()
+
+            //MARK: - CENTER
+
+            //MARK: - FOOTER
 
             Button("Restart"){
                 isOnboardingViewActive = true
